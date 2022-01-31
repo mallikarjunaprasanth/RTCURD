@@ -1,6 +1,29 @@
 .main-header{
   font-family: 'Montserrat', sans-serif;
 }
+body{
+  background: url(./components/bgm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 .hover:hover{
   transform : scale(1.1)
+}
+.bgcolor{
+  background: rgb(148, 233, 185);
+ 
+}
+.modify{
+ 
+  background:none;
+  outline: none;
+  border: none;
+    border-bottom: 1px solid white;
+}
+.modify:hover{
+  border-bottom: 2px solid white;
+}
+::-webkit-input-placeholder{
+  color: rgb(167, 166, 166)
 }
