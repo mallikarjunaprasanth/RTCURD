@@ -59,25 +59,25 @@ const dataAdd = () =>
 });}
 
   return (
-    <div className=" container w-50 rounded-3">
+    <div className=" container w-50 fs-5">
      
       <Form className="container mt-5 text-center p-5">
       <div className="text-center fs-3 text-light fw-bold">Contact Form</div>
         {/* <label className="fw-bold">First Name :</label> <br/> */}
-        <i class="far text-light me-2 fa-user"></i>
+        <i class="fas text-warning me-2 fa-user"></i>
         <input type="text" placeholder="First Name" onChange={(e) => setFirstName(e.target.value)} className="w-50 modify text-light  mt-4" /> <br/>
         {/* <label className="fw-bold">Last Name :</label> */}
-        <i class="far text-light me-2 fa-user"></i>
+        <i class="fas text-warning me-2 fa-user"></i>
         <input type="text" placeholder="Last Name" onChange={(e) => setLastName(e.target.value)} className="w-50 modify text-light mt-4" /> <br/>
         {/* <label className="fw-bold">Salary :</label> */}
-        <i class="fas  text-light me-2 fa-rupee-sign"></i>
+        <i class="fas  text-info me-2 fa-rupee-sign"></i>
         <input type="phone" placeholder="Salary" onChange={(e) => setSalary(e.target.value)} className="w-50 modify text-light mt-4" /> <br/>
 
-        <input className="me-2 mt-3" type="checkbox"  onChange={(e) => setCheckbox(!checkbox)}/>
+        <input className="me-2 mt-4 " type="checkbox"  onChange={(e) => setCheckbox(!checkbox)}/>
         <span className="text-white">I agree to the Terms and Conditions</span> <br/>
 
 
-        <Button onClick={postData}  type="submit" className=" w-25 mt-3">
+        <Button onClick={postData}  type="submit" className="mt-3">
           Submit
         </Button>
       </Form>

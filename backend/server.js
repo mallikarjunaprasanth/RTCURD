@@ -11,10 +11,9 @@ app.use(cors())
 app.use(express.json())
 // Connect mongoose 
 
-mongoose.connect('mongodb+srv://prasanth:12345@cluster0.rdzxq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{useUnifiedTopology:true,useNewUrlParser:true}).then(()=>{
+mongoose.connect('mongodb+srv://prasanth:12345@cluster0.rdzxq.mongodb.net/Contactdata?retryWrites=true&w=majority',{useUnifiedTopology:true,useNewUrlParser:true}).then(()=>{
     console.log('DB connected successfully')
 }).catch(err => console.log(err))
-
 
 
 // app.get('/',(req, res) => {

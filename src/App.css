@@ -27,3 +27,10 @@ body{
 ::-webkit-input-placeholder{
   color: rgb(167, 166, 166)
 }
+.hvr:hover{
+
+ 
+  color:rgb(241, 89, 34)!important;
+  font-weight: bold;
+
+}

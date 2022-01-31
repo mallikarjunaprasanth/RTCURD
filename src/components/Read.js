@@ -103,7 +103,7 @@ export default function Read() {
               <td>{data.salary}</td>
               <td>{data.checkbox ? "Checked" : "Unchecked"}</td>
               <td>
-                <Link exact to="/update">
+                <Link exact to={`/update/${data._id}`}>
                   <span className="me-5 hover" onClick={() => setData(data)}>
                     <i className="far text-white  fa-edit"></i>
                   </span>

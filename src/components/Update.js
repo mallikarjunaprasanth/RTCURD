@@ -63,24 +63,27 @@ const updateMessage = () =>
 
    
     return (
-        <div  className="bgcolor container w-50 rounded-3">
-           <Form  className="container mt-5  p-5">
-           <div className="text-center fs-3 text-dark fw-bold">Edit Form</div>
-        <label className="fw-bold">First Name</label>
-        <input type="text" placeholder="First Name" value={firstName}  onChange={(e) => setFirstName(e.target.value)} className="w-75 form-control mt-3" />
-        <label className="fw-bold">Last Name</label>
-        <input type="text" placeholder="Last Name" value={lastName}  onChange={(e) => setLastName(e.target.value)} className="w-75 form-control mt-3" />
-        <label className="fw-bold">Salary :</label>
-        <input type="phone" placeholder="Salary" value={salary} onChange={(e) => setSalary(e.target.value)} className="w-75 form-control mt-3" />
+        <div  className=" container w-50 fs-5">
+           <Form  className="container mt-5 text-center  p-5">
+           <div className="text-center fs-3 text-white fw-bold">Edit Form</div>
+        {/* <label className="fw-bold">First Name</label> */}
+        <i class="fas text-warning me-2 fa-user"></i>
+        <input type="text" placeholder="First Name" value={firstName}  onChange={(e) => setFirstName(e.target.value)} className="w-50 modify text-light  mt-4" /><br/>
+        {/* <label className="fw-bold">Last Name</label> */}
+        <i class="fas text-warning me-2 fa-user"></i>
+        <input type="text" placeholder="Last Name" value={lastName}  onChange={(e) => setLastName(e.target.value)} className="w-50 modify text-light  mt-4" /><br/>
+        {/* <label className="fw-bold">Salary :</label> */}
+        <i class="fas  text-info me-2 fa-rupee-sign"></i>
+        <input type="phone" placeholder="Salary" value={salary} onChange={(e) => setSalary(e.target.value)} className="w-50 modify text-light  mt-4" /><br/>
 
-        <input type="checkbox" checked="checked"  onChange={(e) => setCheckbox(!checkbox)}/>{" "}
-        <span>I agree to the Terms and Conditions</span>
-        <Button onClick={updateAPIData} className=" d-block w-25 mt-3">
+        <input type="checkbox" className="me-2 mt-4" checked="checked"  onChange={(e) => setCheckbox(!checkbox)}/>{" "}
+        <span className='text-white'>I agree to the Terms and Conditions</span><br/>
+        <Button onClick={updateAPIData} className="  mt-4">
           update
         </Button>
 
-        <Link to="/read" className="text-decoration-none">
-          <div  className=" text-dark text-end"><i class="fas fa-arrow-left pe-2"></i> <code className="fs-4">Back</code></div></Link>
+        <Link to="/read" className="text-decoration-none ">
+          <div  className="  text-white text-end"><i class="fas fa-arrow-left hvr pe-2"></i> <code className="fs-4 hvr text-white">Back</code></div></Link>
       </Form>
         </div>
     )
